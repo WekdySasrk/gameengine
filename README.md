@@ -8,5 +8,5 @@
 下载项目所需依赖
 可在package.json中自定义调试命令
 默认
-```npm run start``
+```npm run start```
 使用electron打包
