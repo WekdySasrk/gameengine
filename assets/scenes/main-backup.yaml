@@ -1,0 +1,67 @@
+behaviours:
+  - type: Transform
+    properties:
+      x: 0
+      y: 0
+      scaleX: 1
+      scaleY: 1
+      rotation: 0
+  - type: Walkable
+    properties:
+      speed: 1
+children:
+  - behaviours:
+      - type: Transform
+        properties:
+          x: -56
+          y: -48
+          scaleX: 1
+          scaleY: 1
+          rotation: 0
+      - type: ShapeRectRenderer
+        properties:
+          width: 40
+          height: 40
+          color: red
+      - type: RigidBody
+        properties:
+          x: -7
+          y: 6
+          type: 2
+      - type: CircleCollider
+        properties:
+          radius: 5
+  - behaviours:
+      - type: Transform
+        properties:
+          x: 0
+          y: 200
+          scaleX: 1
+          scaleY: 1
+          rotation: 0
+      - type: ShapeRectRenderer
+        properties:
+          width: 400
+          height: 10
+          color: blue
+      - type: RigidBody
+        properties:
+          x: 0
+          y: -25
+          type: 0
+      - type: EdgeCollider
+        properties:
+          startX: -25
+          endX: 25
+          startY: 0
+          endY: 0
+  - behaviours:
+      - type: Transform
+        properties:
+          x: -200
+          y: -200
+          scaleX: 1
+          scaleY: 1
+          rotation: 0
+      - type: Camera
+    id: camera
